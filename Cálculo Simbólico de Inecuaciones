@@ -1,0 +1,60 @@
+print("Cálculo Simbólico de Inecuaciones")
+
+condiciones = int(input("Escoja una opcion: \n 1- () \n 2- [] \n 3- (] \n 4- [) \n 5- Salir \n"))
+while condiciones != 5:
+
+    if condiciones == 1:
+        print("Valores Abiertos")
+        
+        rangoinicial =(input("Ingrese el valor del rango inicial: "))
+        rangofinal = (input("Ingrese el valor del rango final: "))
+        
+        print("(",rangoinicial,",",rangofinal,")")
+        print()
+        #if rangofinal > 0: 
+        print("X pertenece a los limites de ",rangoinicial, "abierto a ", rangofinal, " abierto donde nunca llega a ser ", rangoinicial, " y donde nunca llega a ser ", rangofinal)
+        print()
+
+    elif condiciones == 2:
+        print("Valores Cerrados")
+        
+        rangoinicial =(input("Ingrese el valor del rango inicial: "))
+        rangofinal = (input("Ingrese el valor del rango final: "))
+        
+        print("(",rangoinicial,",",rangofinal,")")
+        print()
+        #if rangofinal > 0: 
+        print("X pertenece a los limites de ",rangoinicial, "cerrado a ", rangofinal, " cerrado donde nunca llega a ser ", rangoinicial, " y donde nunca llega a ser ", rangofinal)
+       
+        print()
+
+    elif condiciones == 3:
+        print("Valores Mixtos (primer valor abierto, segundo cerrado)")
+        
+        rangoinicial =(input("Ingrese el valor del rango inicial: "))
+        rangofinal = (input("Ingrese el valor del rango final: "))
+        
+        print("(",rangoinicial,",",rangofinal,")")
+        print()
+        #if rangofinal > 0: 
+        print("X pertenece a los limites de ",rangoinicial, "abierto a ", rangofinal, " cerrado donde nunca llega a ser ", rangoinicial, " y donde nunca llega a ser ", rangofinal)
+       
+        print()
+
+    elif condiciones == 4:
+        print("Valores Mixtos (primer valor cerrado, segundo abierto)")
+        
+        rangoinicial =(input("Ingrese el valor del rango inicial: "))
+        rangofinal = (input("Ingrese el valor del rango final: "))
+        
+        print("(",rangoinicial,",",rangofinal,")")
+        print()
+        #if rangofinal > 0: 
+        print("X pertenece a los limites de ",rangoinicial, "cerrado a ", rangofinal, " abierto donde nunca llega a ser ", rangoinicial, " y donde nunca llega a ser ", rangofinal)
+       
+        print()
+
+    else: 
+        print("Digite una opción correcta")
+    
+    condiciones = int(input("Escoja una opción: \n 1- () \n 2- [] \n 3- (] \n 4- [) \n 5- Salir \n"))
